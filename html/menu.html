@@ -1,0 +1,88 @@
+<!-- SlideBar -->
+<div class="sidebar close">
+	<!-- Logo y Nombre de la Empresa -->
+	<div class="logo-details">
+		<i class='bx bxl-spring-boot'></i>
+		<span class="logo_name">EcoTrash Service</span>
+	</div>
+	<!-- Lista de iconos y secciones -->
+	<ul class="nav-links">
+		<!-- Boton de abrir y cerrar el Menu -->
+		<li><i class='bx bx-menu'></i></li>
+		<!-- Boton de la 1ra Seccion -->
+		<li id="seccion_1">
+			<a href="" id="quienes">
+				<i class='bx bxs-user'></i>
+				<span class="link_name">¿Quienes somos?</span>
+			</a>
+			<ul class="sub-menu blank">
+				<li><a class="link_name" href="#">¿Quienes somos?</a></li>
+			</ul>
+		</li>
+		<!-- Boton de la 2da Seccion -->
+		<li id="seccion_2">
+			<div class="iocn-link">
+				<a href="" id="residuos">
+					<i class='bx bx-recycle' ></i>
+					<span class="link_name">Residuos</span>
+				</a>
+				<i class='bx bxs-chevron-down arrow' ></i>
+			</div>
+			<ul class="sub-menu">
+				<li><a class="link_name" href="#">Residuos</a></li>
+				<li><a href="#organicos">Organicos</a></li>
+				<li><a href="#inorganicosr">Inorganicos Reciclables</a></li>
+				<li><a href="#inorganicosnr">Inorganicos No Reciclables</a></li>
+				<li><a href="#manejo">Manejo Especial</a></li>
+			</ul>
+		</li>
+		<!-- Boton de la 3ra Seccion -->
+		<li id="seccion_3">
+			<a href="" id="como">
+				<i class='bx bxs-slideshow' ></i>
+				<span class="link_name">¿Como Reciclo?</span>
+			</a>
+			<ul class="sub-menu blank">
+				<li><a class="link_name" href="#">¿Como Reciclo?</a></li>
+			</ul>
+		</li>
+		<!-- Boton de la 4ta Seccion -->
+		<li id="seccion_4">
+			<a href="" id="noticias">
+				<i class='bx bxs-news' ></i>
+				<span class="link_name">Noticias</span>
+			</a>
+			<ul class="sub-menu blank">
+				<li><a class="link_name" href="#">Noticias</a></li>
+			</ul>
+		</li>
+		<!-- Boton de la 5ta Seccion -->
+		<li id="seccion_5">
+			<a href="" id="colaboradores">
+				<i class='bx bxs-group'></i>
+				<span class="link_name">Colaboradores</span>
+			</a>
+			<ul class="sub-menu blank">
+				<li><a class="link_name" href="#">Colaboradores</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<!-- Script -->
+<script type="text/javascript">
+	let arrow = document.querySelectorAll(".arrow");
+	for (var i = 0; i < arrow.length; i++) {
+		arrow[i].addEventListener("click", (e)=>{
+			let arrowParent = e.target.parentElement.parentElement;
+			arrowParent.classList.toggle("showMenu");
+		});
+	}
+
+	let sidebar = document.querySelector(".sidebar");
+	let sidebarBtn = document.querySelector(".bx-menu");
+
+	sidebarBtn.addEventListener("click", ()=>{
+		sidebar.classList.toggle("close");
+	});
+</script>

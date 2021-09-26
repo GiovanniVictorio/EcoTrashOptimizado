@@ -1,0 +1,40 @@
+.home-section .div-header{
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  position: relative;
+  max-width: 90px;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li { list-style: none; }
+header ul li a {
+  display: inline-block;
+  color: #43A047;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+}
+.btn-open {
+  color: #43A047;
+  font-size: 15px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+.btn-open:hover, header ul li a:hover { color: blue; }

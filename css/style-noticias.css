@@ -1,0 +1,32 @@
+.home-section{
+  position: relative;
+  background: #fff;
+  height: 100vh;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+}
+.sidebar.close ~ .home-section{
+  left: 78px;
+  width: calc(100% - 78px);
+}
+/* Css del Contenido*/
+.content {
+  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .titulo { 
+  padding-top: 40px;
+  text-align: center;
+}
+.content .video {
+  width: 100%;
+  padding-top: 15px;
+  text-align: center;
+}
+.content .info { padding: 40px 0; }
