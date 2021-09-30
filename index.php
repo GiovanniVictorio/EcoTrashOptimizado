@@ -30,8 +30,6 @@
 			<div class="content">
 
 				<div class="info">
-					<p>Lo que mas nos motiva a seguir con este proyecto son las personas que se preocupa por el ecosistema, con nosotros tu basura no queda en tu comunidad, 100% garantizado. ¡Contáctanos, estamos a tus órdenes!</p>
-					<br>
 					Eco Trash Service brinda atención y capacitación personalizada en el manejo correcto de todos los Residuos Sólidos Urbanos (RSU) que tu generas, de esa manera garantizamos que esos desechos sean procesados por nuestros especialistas, quienes disgregan todo el material, dejando así libre impacto ambiental en tu comunidad. <br> <br>
 					Hoy más que nunca es importante cuidar nuestro entorno, por ello es que hemos instaurado un proyecto con visión a futuro; destinamos un porcentaje de nuestros contratos para campañas de concientización en materia de separación de basura, en el mantenimiento y conservación de los vertederos de basura a cielo abierto donde tenemos sucursales. <br> <br>
 					De los desechos orgánicos aprovechamos la mayor cantidad para elaborar composta y poder regresar a bajo costo este beneficio para nuestros árboles en parques y jardines. <br> <br>
@@ -74,11 +72,11 @@
 		var residuos = document.getElementById("residuos");
 		residuos.href = "html/espanol/residuos.php";
 		var como = document.getElementById("como");
-		como.href = "";
+		como.href = "html/espanol/como.php";
 		var noticias = document.getElementById("noticias");
 		noticias.href = "html/espanol/noticias.php";
 		var colaboradores = document.getElementById("colaboradores");
-		colaboradores.href = "";
+		colaboradores.href = "html/espanol/colaboradores.php";
 
 		var logo = document.getElementById("logo");
 		logo.src = "images/Logo.png";

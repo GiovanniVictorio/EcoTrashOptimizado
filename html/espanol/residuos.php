@@ -131,11 +131,11 @@
 		var residuos = document.getElementById("residuos");
 		residuos.href = "";
 		var como = document.getElementById("como");
-		como.href = "";
+		como.href = "como.php";
 		var noticias = document.getElementById("noticias");
 		noticias.href = "noticias.php";
 		var colaboradores = document.getElementById("colaboradores");
-		colaboradores.href = "";
+		colaboradores.href = "colaboradores.php";
 
 		var logo = document.getElementById("logo");
 		logo.src = "../../images/Logo.png";

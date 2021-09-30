@@ -1,0 +1,25 @@
+<div id="modal_container" class="modal-container">
+	<div>
+		<h1>QR Code</h1>
+		<div class="img-qr">
+			<!-- <img src="images/QR.jpg"> -->
+			<p>Not available</p>
+			<p>at the moment</p>
+		</div>
+		<button id="close">Close</button>
+	</div>
+</div>
+
+<script type="text/javascript">
+	const open = document.getElementById('open');
+	const modal_container = document.getElementById('modal_container');
+	const close = document.getElementById('close');
+
+	open.addEventListener('click', ()=>{
+		modal_container.classList.add('showModal');
+	});
+
+	close.addEventListener('click', ()=>{
+		modal_container.classList.remove('showModal');
+	});
+</script>

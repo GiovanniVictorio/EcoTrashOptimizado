@@ -1,0 +1,46 @@
+.home-section{
+  position: relative;
+  background: #fff;
+  height: 100vh;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+}
+.sidebar.close ~ .home-section{
+  left: 78px;
+  width: calc(100% - 78px);
+}
+/* Css del Contenido*/
+.content {
+  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.contenedor-imagenes {
+  display: flex;
+  
+}
+.content .titulo { 
+  padding-top: 40px;
+  text-align: center;
+}
+.content .titulo_papel_carton {
+  padding-top: 40px;
+  text-align: center;
+  color: #43A1F5;}
+.content .info { padding: 40px 0; text-align: center; color: #43A1F5;}
+.content .info-carton { padding: 40px 0; text-align: center; color: #9A3705;}
+.content .info-plastico { padding: 40px 0; text-align: center; color: #F8C502;}
+.content .info-vidrio { padding: 40px 0; text-align: center; color: #176315;}
+.content .info-metales { padding: 40px 0; text-align: center; color: #858584;}
+.content .info-organicos { padding: 40px 0; text-align: center; color: #62370A;}
+.content .info-peligrosos { padding: 40px 0; text-align: center; color: #EA412E;}

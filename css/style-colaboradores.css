@@ -1,0 +1,115 @@
+.home-section{
+  position: relative;
+  background: #fff;
+  height: 100vh;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+}
+.sidebar.close ~ .home-section{
+  left: 78px;
+  width: calc(100% - 78px);
+}
+/* Css del Contenido*/
+.content {
+  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .titulo { 
+  padding-top: 40px;
+  text-align: center;
+}
+.content .titulo h2 { font-weight: 500; }
+.cards {
+  display: flex;
+  width: 100%;
+  margin: 40px 0;
+}
+.card {
+  position: relative;
+  width: 340px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px #999;
+  margin: auto;
+}
+.circle {
+  position: absolute;
+  top: -190px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 500px;
+  clip-path: circle();
+}
+.circle::before {
+  content: '';
+  top: -8px;
+  left: -16px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: 0 0 0 20px rgba(67, 160, 71, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+}
+.circle .imgBx {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 340px;
+  height: 310px;
+  background: #ff0;
+}
+.circle .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  transform-origin: top;
+}
+.circle .imgBx:hover img { transform: scale(1.1); }
+.contentCard {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  padding: 20px 30px;
+}
+.contentCard .bxs-map {
+  background: #43A047;
+  color: #fff;
+  padding: 3px 4px;
+  border-radius: 2px;
+}
+.contentCard h3 {
+  font-size: 1.4em;
+  color: #333;
+  margin-top: 7px;
+  margin-bottom: 2px;
+}
+.textIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.textIcon h4 {
+  font-weight: 400;
+  color: #43A047;
+}
+.textIcon .bx {
+  color: #43A047;
+}

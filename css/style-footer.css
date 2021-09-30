@@ -178,7 +178,6 @@ form { width: 100%; }
       "mapF";
   }
   .mapF {
-    padding: 0;
     min-height: 300px;
   }
   .formBox .row50 {
@@ -188,4 +187,5 @@ form { width: 100%; }
   }
   .inputBox { width: 100%; }
   .contact { padding: 30px; }
+  .mapF { padding: 0; }
 }

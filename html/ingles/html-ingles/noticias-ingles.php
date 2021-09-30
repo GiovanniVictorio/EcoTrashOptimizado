@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>EcoTrash Service</title>
 
 	<!-- Css Links -->
-	<link href='../../css/style-noticias.css' rel='stylesheet'>
-	<link href='../../css/style-menu.css' rel='stylesheet'>
-	<link href='../../css/style-header.css' rel='stylesheet'>
-	<link href='../../css/style-modal-qr.css' rel='stylesheet'>
-	<link href='../../css/style-footer.css' rel='stylesheet'>
+	<link href='../../../css/style-noticias.css' rel='stylesheet'>
+	<link href='../../../css/style-menu.css' rel='stylesheet'>
+	<link href='../../../css/style-header.css' rel='stylesheet'>
+	<link href='../../../css/style-modal-qr.css' rel='stylesheet'>
+	<link href='../../../css/style-footer.css' rel='stylesheet'>
 	<!-- Boxiocns CDN Link -->
 	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<!-- Script CDN Link -->
@@ -19,18 +19,18 @@
 <body>
 	<div class="container">
 		<!-- Barra de navegacion -->
-		<?php include "../menu.html"; ?>
+		<?php include "menu-ingles.html"; ?>
 
 		<!-- Contenido -->
 		<div class="home-section">
 			<!-- Header -->
-			<?php include "../header.html"; ?>
+			<?php include "header-ingles.html"; ?>
 
 			<!-- Contenido x2 -->
 			<div class="content">
 				<!-- Titulo -->
 				<div class="titulo">
-					<h2>Titulo de Prueba</h2>
+					<h2>Test Title</h2>
 				</div>
 				<!-- Video -->
 				<div class="video">
@@ -44,12 +44,12 @@
 			</div>
 
 			<!-- Footer -->
-			<?php include "../footer.html"; ?>
-			<?php include "../enviar.php" ?>
+			<?php include "footer-ingles.html"; ?>
+			<?php include "../enviar.php"; ?>
 		</div>
 
 		<!-- Modal -->
-		<?php include "../modal-qr.html"; ?>
+		<?php include "modal-qr-ingles.html"; ?>
 	</div>
 
 	<script type="text/javascript">
@@ -61,21 +61,21 @@
 		seccion.classList.add('select');
 
 		var idioma = document.getElementById("idioma");
-		idioma.href = "../ingles/html-ingles/noticias-ingles.php";
+		idioma.href = "../../espanol/noticias.php";
 
 		var quienes = document.getElementById("quienes");
-		quienes.href = "../../index.php";
+		quienes.href = "../index-ingles.php";
 		var residuos = document.getElementById("residuos");
-		residuos.href = "residuos.php";
+		residuos.href = "";
 		var como = document.getElementById("como");
-		como.href = "como.php";
+		como.href = "";
 		var noticias = document.getElementById("noticias");
 		noticias.href = "";
 		var colaboradores = document.getElementById("colaboradores");
-		colaboradores.href = "colaboradores.php";
+		colaboradores.href = "colaboradores-ingles.php";
 
 		var logo = document.getElementById("logo");
-		logo.src = "../../images/Logo.png";
+		logo.src = "../../../images/Logo.png";
 	</script>
 </body>
 </html>

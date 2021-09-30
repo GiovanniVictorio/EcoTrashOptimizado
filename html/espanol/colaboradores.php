@@ -6,7 +6,7 @@
 	<title>EcoTrash Service</title>
 
 	<!-- Css Links -->
-	<link href='../../css/style-noticias.css' rel='stylesheet'>
+	<link href='../../css/style-colaboradores.css' rel='stylesheet'>
 	<link href='../../css/style-menu.css' rel='stylesheet'>
 	<link href='../../css/style-header.css' rel='stylesheet'>
 	<link href='../../css/style-modal-qr.css' rel='stylesheet'>
@@ -30,16 +30,61 @@
 			<div class="content">
 				<!-- Titulo -->
 				<div class="titulo">
-					<h2>Titulo de Prueba</h2>
+					<h2>Conoce a las empresas que son 100%</h2>
 				</div>
-				<!-- Video -->
-				<div class="video">
-					<iframe width="650" height="405" src="https://www.youtube.com/embed/YiHTNfKJwAw?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
+				<!-- Div con 2 cartas -->
+				<div class="cards">
+					<!-- Carta 1 -->
+					<div class="card">
+						<!-- Img de la carta -->
+						<div class="circle">
+							<div class="imgBx">
+								<img src="../../images/colaboradores/colab_1.jpg">
+							</div>
+						</div>
+						<!-- Informacion de la carta -->
+						<div class="contentCard">
+							<!-- Link web -->
+							<a href="">
+								<i class='bx bxs-map'></i>
+							</a>
+							<!-- Nombre -->
+							<h3>Chedraui Palacio</h3>
+							<!-- Informacion -->
+							<div class="textIcon">
+								<h4>Telefono: 800 925 1111</h4>
+								<a href="">
+									<i class='bx bx-right-arrow-alt'></i>
+								</a>
+							</div>
+						</div>
+					</div>
 
-				<div class="info">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<!-- Carta 2 -->
+					<div class="card">
+						<!-- Img de la carta -->
+						<div class="circle">
+							<div class="imgBx">
+								<img src="../../images/colaboradores/colab_2.jpg">
+							</div>
+						</div>
+						<!-- Informacion de la carta -->
+						<div class="contentCard">
+							<!-- Link web -->
+							<a href="">
+								<i class='bx bxs-map'></i>
+							</a>
+							<!-- Nombre -->
+							<h3>Walmart</h3>
+							<!-- Informacion -->
+							<div class="textIcon">
+								<h4>Telefono: 800 925 1234</h4>
+								<a href="">
+									<i class='bx bx-right-arrow-alt'></i>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -57,11 +102,11 @@
 		secciones.forEach(function(element, index){
 			element.classList.remove('select');
 		});
-		var seccion = document.getElementById("seccion_4");
+		var seccion = document.getElementById("seccion_5");
 		seccion.classList.add('select');
 
 		var idioma = document.getElementById("idioma");
-		idioma.href = "../ingles/html-ingles/noticias-ingles.php";
+		idioma.href = "../ingles/html-ingles/colaboradores-ingles.php";
 
 		var quienes = document.getElementById("quienes");
 		quienes.href = "../../index.php";
@@ -70,9 +115,9 @@
 		var como = document.getElementById("como");
 		como.href = "como.php";
 		var noticias = document.getElementById("noticias");
-		noticias.href = "";
+		noticias.href = "noticias.php";
 		var colaboradores = document.getElementById("colaboradores");
-		colaboradores.href = "colaboradores.php";
+		colaboradores.href = "";
 
 		var logo = document.getElementById("logo");
 		logo.src = "../../images/Logo.png";
