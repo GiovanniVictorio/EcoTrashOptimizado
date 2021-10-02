@@ -38,3 +38,31 @@ header ul li a {
   cursor: pointer;
 }
 .btn-open:hover, header ul li a:hover { color: blue; }
+
+/*Responsiov*/
+@media (max-width:  800px) {
+  .div-header header {
+    display: inline-block;
+
+    width: 100%;
+  }
+  header div {
+    width: 100%;
+    text-align: center;
+  }
+  header ul li {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 400px) {
+  header {
+   padding: 0 5px;
+  }
+  header ul li a {
+    margin-left: 2px;
+  }
+  header ul li a, .btn-open {
+    font-size: 12px;
+  }
+}

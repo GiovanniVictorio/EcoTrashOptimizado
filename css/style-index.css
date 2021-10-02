@@ -30,13 +30,42 @@
 .content .img-map .map, .content .img-map .images { width: 50%; }
 .content .img-map .images img { width: 450px; }
 
-@media (max-width: 1127px) {
+@media (max-width: 800px) {
   .content .img-map {
     display: inline-block;
   }
   .content .img-map .map, .content .img-map .images { 
-    width: 100%;
+    width: 50%;
     text-align: center; 
   }
-  .content .img-map .images { margin-top: 20px; }
+  .content .img-map .images { 
+    margin-top: 10px; 
+    
+    width: 100%;
+  }
+  .content {
+    font-size: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+  }
+  .content .img-map .images img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .content .img-map {
+    display: inline-block;
+  }  
+  .content {
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .content .img-map .images img {
+    width: 100%;
+  }
 }

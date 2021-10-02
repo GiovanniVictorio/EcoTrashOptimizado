@@ -189,3 +189,150 @@ form { width: 100%; }
   .contact { padding: 30px; }
   .mapF { padding: 0; }
 }
+@media (max-width: 600px) {
+  .contactUs { padding: 10px; }
+  .box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "form"
+      "infoF"
+      "mapF";
+  }
+  .title h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .box h2{
+    font-size: 20px;
+  }
+  .mapF {
+    max-width: 900px;
+    min-height: 300px;
+  }
+  .mapF { padding: 0; }
+  .formBox { padding: 0px; }
+  .formBox .row50 {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+  .form {
+    padding: 5px;
+    max-width: 900px;
+  }
+  .contact {
+    padding: 5px;
+    max-width: 900px;
+  }
+  .contact form h2 {
+    text-align: center;
+  }
+  .contactUs {
+    max-width: 900px;
+  }
+  .infoF {
+    padding: 0px;
+    font-size: 13px;
+    max-width: 900px;
+  }
+  .infoF h3{
+    text-align: center;
+  }
+  .infoBox .sci{
+    margin-left: 40%;
+  }
+  .infoBox {
+    padding-left: 0;
+    margin-right: 10%;
+  }
+  .container-footer {
+    display: block;
+  }
+  .container-footer .copy {
+    text-align: center;
+    font-size: 15px;
+  }
+  .container-footer .information {
+    text-align: center;
+    font-size: 15px;
+  }
+  .inputBox { width: 100%; }
+  .contact { padding: 30px; }
+}
+
+/* Responsivo movil */
+@media (max-width: 400px) {
+  footer {
+    width: 100%;
+  }
+  .contactUs { padding: 10px; }
+  .box {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "form"
+      "infoF"
+      "mapF";
+  }
+  .title h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .box h2{
+    font-size: 20px;
+  }
+  .mapF {
+    max-width: 300px;
+    min-height: 300px;
+  }
+  .formBox { padding: 0px; }
+  .formBox .row50 {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+  .form {
+    padding: 5px;
+    max-width: 300px;
+  }
+  .contact {
+    padding: 5px;
+    max-width: 300px;
+  }
+  .contact form h2 {
+    text-align: center;
+  }
+  .contactUs {
+    max-width: 350px;
+  }
+  .infoF {
+    text-align: center;
+    padding: 0px;
+    font-size: 13px;
+    max-width: 300px;
+  }
+  .infoBox .sci{
+    margin-left: 22%;
+  }
+  .infoBox {
+    padding-left: 0;
+    margin-right: 10%;
+  }
+  .infoBox a {
+    text-align: center;
+  }
+  .container-footer {
+    display: block;
+  }
+  .container-footer .copy {
+    font-size: 15px;
+  }
+  .container-footer .information {
+    font-size: 15px;
+  }
+  .inputBox { width: 100%; }
+  .contact { padding: 30px; }
+  .mapF { padding: 0; }
+}

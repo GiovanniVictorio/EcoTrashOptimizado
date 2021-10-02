@@ -113,3 +113,20 @@
 .textIcon .bx {
   color: #43A047;
 }
+@media (max-width:  1000px) {
+  .cards {
+    display: inline-block;
+  }
+  .card {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 400px){
+  .content {
+    padding: 10px;
+  }
+  .card {
+    width: 280px;
+    height: 450px;
+  }
+}

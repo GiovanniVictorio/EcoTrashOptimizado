@@ -41,3 +41,25 @@
   text-align: center;
 }
 .content .titulo h2 { font-weight: 500; }
+@media (max-width:  900px){
+  .content .img-info-2 {
+    display: inline-block;
+    width: 100%;
+  }
+  .info {
+    text-align: center;
+  }
+  .content .img-info img {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width:  400px){
+  .content {
+    padding: 5px;
+  }
+  .content .img-info-2 img {
+    width: 100%;
+    margin: 0;
+  }
+}

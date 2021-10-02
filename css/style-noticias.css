@@ -30,3 +30,18 @@
   text-align: center;
 }
 .content .info { padding: 40px 0; }
+@media (max-width:  840px){
+  .content {
+    padding: 5px;
+  }
+  .info {
+    text-align: center;
+  }
+  .content .video {
+    width: 100%;
+  }
+  .content .video iframe {
+    width: 90%;
+    height: auto;
+  }
+}

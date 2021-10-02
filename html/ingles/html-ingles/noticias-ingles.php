@@ -45,7 +45,7 @@
 
 			<!-- Footer -->
 			<?php include "footer-ingles.html"; ?>
-			<?php include "../enviar.php"; ?>
+			<?php include "../../enviar.php"; ?>
 		</div>
 
 		<!-- Modal -->
