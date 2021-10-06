@@ -55,6 +55,11 @@ header ul li a {
     margin: auto;
   }
 }
+@media (max-width: 740px) {
+  header ul li a, .btn-open {
+    font-size: 13px;
+  }
+}
 @media (max-width: 400px) {
   header {
    padding: 0 5px;

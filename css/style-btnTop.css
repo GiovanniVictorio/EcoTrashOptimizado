@@ -1,0 +1,50 @@
+.go-top-container {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	z-index: -1;
+}
+.go-top-button {
+	width: 0;
+	height: 0;
+	background: #fff;
+	cursor: pointer;
+	transition: 0.2s;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+.go-top-button i {
+	position: absolute;
+	font-size: 20px;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	color: #43A047;
+	transition: 0.2s;
+}
+.showBtn { z-index: 10; }
+.showBtn .go-top-button {
+	animation: popup 0.3s ease-in-out;
+	width: 30px;
+	height: 40px;
+	z-index: 11;
+}
+.showBtn i { transform: translate(-50%, -50%) scale(1); }
+@keyframes popup {
+	0% {
+		width: 0;
+		height: 0;
+	}
+	50% {
+		width: 40px;
+		height: 40px;
+	}
+	100% {
+		width: 30px;
+		height: 40px;
+	}
+}

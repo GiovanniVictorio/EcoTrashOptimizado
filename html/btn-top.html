@@ -1,0 +1,22 @@
+<div class="go-top-container">
+	<div class="go-top-button">
+		<i class='bx bxs-up-arrow'></i>
+	</div>
+</div>
+
+<script type="text/javascript">
+	window.onscroll = function(){
+		if (document.documentElement.scrollTop > 100) {
+			document.querySelector('.go-top-container').classList.add('showBtn');
+		} else {
+			document.querySelector('.go-top-container').classList.remove('showBtn');
+		}
+	}
+
+	document.querySelector('.go-top-container').addEventListener('click', ()=>{
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	});
+</script>

@@ -20,6 +20,23 @@
   justify-content: space-between;
   align-items: center;
 }
+.content .info { 
+  padding: 20px 0;
+  text-align: center;
+}
+.content .info h2 { font-weight: 500; }
+.titulo { 
+  padding-top: 40px;
+  text-align: center;
+}
+.content .titulo h2 { font-weight: 500; }
+.papel-carton { color: #43A1F5 }
+.bebidas { color: #9A3705; }
+.plasticos { color: #F8C502; }
+.vidrios { color: #176315; }
+.latas { color: #858584; }
+.orga { color: #62370A; }
+.residuos { color: #EA412E; }
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -27,21 +44,12 @@
 }
 .contenedor-imagenes {
   display: flex;
-  
 }
-.content .titulo { 
-  padding-top: 40px;
-  text-align: center;
+.contenedor-imagenes div img {
+  height: 340px;
 }
-.content .titulo_papel_carton {
-  padding-top: 40px;
-  text-align: center;
-  color: #43A1F5;}
-.content .info { padding: 40px 0; text-align: center; color: #43A1F5;}
-.content .info-carton { padding: 40px 0; text-align: center; color: #9A3705;}
-.content .info-plastico { padding: 40px 0; text-align: center; color: #F8C502;}
-.content .info-vidrio { padding: 40px 0; text-align: center; color: #176315;}
-.content .info-metales { padding: 40px 0; text-align: center; color: #858584;}
-.content .info-organicos { padding: 40px 0; text-align: center; color: #62370A;}
-.content .info-peligrosos { padding: 40px 0; text-align: center; color: #EA412E;}
-@media 
+.contenedor-imagenes div { 
+  margin-left: 5px;
+  display: flex; 
+}
+.img3 { width: 30%; }
