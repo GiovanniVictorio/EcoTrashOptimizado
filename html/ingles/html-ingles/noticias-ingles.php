@@ -71,7 +71,7 @@
 		var residuos = document.getElementById("residuos");
 		residuos.href = "residuos-ingles.php";
 		var como = document.getElementById("como");
-		como.href = "";
+		como.href = "como-ingles.php";
 		var noticias = document.getElementById("noticias");
 		noticias.href = "";
 		var colaboradores = document.getElementById("colaboradores");

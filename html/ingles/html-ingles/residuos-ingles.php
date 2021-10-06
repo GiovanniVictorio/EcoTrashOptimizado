@@ -134,7 +134,7 @@
 		var residuos = document.getElementById("residuos");
 		residuos.href = "";
 		var como = document.getElementById("como");
-		como.href = "";
+		como.href = "como-ingles.php";
 		var noticias = document.getElementById("noticias");
 		noticias.href = "noticias-ingles.php";
 		var colaboradores = document.getElementById("colaboradores");

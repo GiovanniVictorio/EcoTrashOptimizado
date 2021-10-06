@@ -1,27 +1,76 @@
 <?php 
-if (isset($_POST['enviar'])) {
-	if (!empty($_POST['name']) && !empty($_POST['last']) && !empty($_POST['mail']) && !empty($_POST['phone']) && !empty($_POST['message'])) {
-		
-		$name = $_POST['name'];
-		$last = $_POST['last'];
-		$mail = $_POST['mail'];
-		$phone = $_POST['phone'];
-		$message = $_POST['message'];
+$name = $_POST['name'];
+$lastname = $_POST['last'];
+$mail = $_POST['mail'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
 
-		$header = "From: noreply@example.com" . "\r\n";
-		$header.= "Reply-To: noreply@example.com" . "\r\n";
-		$header.= "X-Mailer: PHP/" . phpversion();
+$paraEcoTrash = "giovanni.vic99@gmail.com";
+$titulo = "Información Cliente";
+$mensaje = "<html>".
+	"<head><title>Email con información de " . $name ."</title>".
+	"<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			font-weight: 300;
+			color: #888;
+			background-color:rgba(230, 225, 225, 0.5);
+			line-height: 30px;
+			text-align: center;
+		}
+		.contenedor{
+			width: 80%;
+			min-height:auto;
+			text-align: center;
+			margin: 0 auto;
+			padding: 40px;
+			background: #ececec;
+			border-top: 3px solid #E64A19;
+		}
+		.bold{
+			color:#333;
+			font-size:25px;
+			font-weight:bold;
+		}
+		img{
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			padding:0px 0px 20px 0px;
+		}
+		</style>
+	</head>".
+	"<body>" .
+	"<div class='contenedor'>".
+            "<p>&nbsp;</p>" .
+            "<p>&nbsp;</p>" .
+                "<span>Nombre del clinete: <strong class='bold'>" . $name . " " . $lastname . "</strong></span>" .
+                "<p>&nbsp;</p>" .
+				"<span>Correo: <strong class='bold'>" . $mail . "</strong></span>" .
+                "<p>&nbsp;</p>" .
+				"<span>Telefono: <strong class='bold'>" . $mail . "</strong></span>" .
+                "<p>&nbsp;</p>" .
+                "<p><strong>Mensaje: </strong> " . $phone . " </p>" .
+                "<p>&nbsp;</p>" .
+        "<p>&nbsp;</p>" .
+        "<p><span class='bold'> EcoTrash Service </span></p>" .
+        "<p>&nbsp;</p>" .
+    "</div>" .
+    "</body>" .
+"</html>";
 
-		$para = 'giovanni.vic99@gmail.com';
-		$asunto = "Informacion de servicios EcoTrash Service";
+$cabecerasCliente  = 'MIME-Version: 1.0' . "\r\n";
+$cabecerasCliente .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+$cabecerasCliente .= 'From: La Paz B.C.S, Mexico<eco.trashservice@gmail.com>';
+$enviadoCliente   = mail($paraEcoTrash, $titulo, $mensaje, $cabecerasCliente);
 
-		$contenido = "Este mensaje fue enviado por: " . $name . $last . "\r\n";
-		$contenido.= "Su e-mail es: " . $mail . "\r\n";
-		$contenido.= "Teléfono de contacto: " . $phone . "\r\n";
-		$contenido.= "Mensaje: " . $_POST['message'] . "\r\n";
-		$contenido.= "Enviado el: " . date('d/m/Y', time());
-
-		$mail = @mail($para,$asunto,$contenido,$header);
-	}
-}
+echo "<script>
+    window.location='https://www.youtube.com/';
+</script>";
 ?>

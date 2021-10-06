@@ -50,14 +50,10 @@
 
 			<!-- Footer -->
 			<?php include "html/footer.html"; ?>
-			<?php include "html/enviar.php" ?>
 		</div>
 
 		<!-- Modal -->
 		<?php include "html/modal-qr.html"; ?>
-
-		<!-- Boton Top -->
-		<?php include "html/btn-top.html"; ?>
 	</div>
 
 	<script type="text/javascript">
