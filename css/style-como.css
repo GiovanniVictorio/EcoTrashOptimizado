@@ -53,3 +53,34 @@
   display: flex; 
 }
 .img3 { width: 30%; }
+
+@media (max-width: 900px){
+  div .contenedor-imagenes img{
+    width: 100%;
+    
+  }
+}
+@media (max-width: 400px){
+  .content {
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .content .contenedor-imagenes {
+    display: inline-block;
+    width: 100%;
+  }
+  div .contenedor-imagenes img {
+    width: 85%;
+    margin-top: 15px;
+  }
+  .content .contenedor-imagenes div img {
+    width: 55%;
+  }
+  .content .contenedor-imagenes div {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+  }
+}
