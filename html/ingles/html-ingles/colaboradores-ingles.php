@@ -11,7 +11,6 @@
 	<link href='../../../css/style-header.css' rel='stylesheet'>
 	<link href='../../../css/style-modal-qr.css' rel='stylesheet'>
 	<link href='../../../css/style-footer.css' rel='stylesheet'>
-	<link href='../../../css/style-btnTop.css' rel='stylesheet'>
 	<!-- Boxiocns CDN Link -->
 	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<!-- Script CDN Link -->
@@ -31,7 +30,7 @@
 			<div class="content">
 				<!-- Titulo -->
 				<div class="titulo">
-					<h2>Meet the companies that are 100%</h2>
+					<h2>Meet the companies that work hand in hand with EcoTrash Service</h2>
 				</div>
 				<!-- Div con 2 cartas -->
 				<div class="cards">
@@ -40,7 +39,7 @@
 						<!-- Img de la carta -->
 						<div class="circle">
 							<div class="imgBx">
-								<img src="../../../images/colaboradores/colab_1.jpg">
+								<img src="../../../images/colaboradores/">
 							</div>
 						</div>
 						<!-- Informacion de la carta -->
@@ -50,10 +49,10 @@
 								<i class='bx bxs-map'></i>
 							</a>
 							<!-- Nombre -->
-							<h3>Chedraui Palacio</h3>
+							<h3></h3>
 							<!-- Informacion -->
 							<div class="textIcon">
-								<h4>Phone: 800 925 1111</h4>
+								<h4>Phone: </h4>
 								<a href="">
 									<i class='bx bx-right-arrow-alt'></i>
 								</a>
@@ -62,42 +61,15 @@
 					</div>
 
 					<!-- Carta 2 -->
-					<div class="card">
-						<!-- Img de la carta -->
-						<div class="circle">
-							<div class="imgBx">
-								<img src="../../../images/colaboradores/colab_2.jpg">
-							</div>
-						</div>
-						<!-- Informacion de la carta -->
-						<div class="contentCard">
-							<!-- Link web -->
-							<a href="">
-								<i class='bx bxs-map'></i>
-							</a>
-							<!-- Nombre -->
-							<h3>Walmart</h3>
-							<!-- Informacion -->
-							<div class="textIcon">
-								<h4>Phone: 800 925 1234</h4>
-								<a href="">
-									<i class='bx bx-right-arrow-alt'></i>
-								</a>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 
 			<!-- Footer -->
 			<?php include "footer-ingles.html"; ?>
-			<?php include "../../enviar.php"; ?>
 		</div>
 
 		<!-- Modal -->
 		<?php include "modal-qr-ingles.html"; ?>
-		<!-- Boton top -->
-		<?php include "../../btn-top.html"; ?>
 	</div>
 
 	<script type="text/javascript">

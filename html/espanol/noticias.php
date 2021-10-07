@@ -11,7 +11,6 @@
 	<link href='../../css/style-header.css' rel='stylesheet'>
 	<link href='../../css/style-modal-qr.css' rel='stylesheet'>
 	<link href='../../css/style-footer.css' rel='stylesheet'>
-	<link href='../../css/style-btnTop.css' rel='stylesheet'>
 	<!-- Boxiocns CDN Link -->
 	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<!-- Script CDN Link -->
@@ -31,28 +30,22 @@
 			<div class="content">
 				<!-- Titulo -->
 				<div class="titulo">
-					<h2>Titulo de Prueba</h2>
+					<h2>Espera noticias de nostros proximamente...</h2>
 				</div>
 				<!-- Video -->
 				<div class="video">
-					<iframe width="650" height="405" src="https://www.youtube.com/embed/YiHTNfKJwAw?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 
 				<div class="info">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</div>
 			</div>
 
 			<!-- Footer -->
 			<?php include "../footer.html"; ?>
-			<?php include "../enviar.php" ?>
 		</div>
 
 		<!-- Modal -->
 		<?php include "../modal-qr.html"; ?>
-		<!-- Boton top -->
-		<?php include "../btn-top.html"; ?>
 	</div>
 
 	<script type="text/javascript">

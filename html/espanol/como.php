@@ -11,7 +11,6 @@
 	<link href='../../css/style-header.css' rel='stylesheet'>
 	<link href='../../css/style-modal-qr.css' rel='stylesheet'>
 	<link href='../../css/style-footer.css' rel='stylesheet'>
-	<link href='../../css/style-btnTop.css' rel='stylesheet'>
 	<!-- Boxiocns CDN Link -->
 	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<!-- Script CDN Link -->
@@ -291,13 +290,10 @@
 
 			<!-- Footer -->
 			<?php include "../footer.html"; ?>
-			<?php include "../enviar.php"; ?>
 		</div>
 
 		<!-- Modal -->
 		<?php include "../modal-qr.html"; ?>
-		<!-- Boton top -->
-		<?php include "../btn-top.html"; ?>
 	</div>
 
 	<script type="text/javascript">

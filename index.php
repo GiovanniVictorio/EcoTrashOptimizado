@@ -11,7 +11,6 @@
 	<link href='css/style-header.css' rel='stylesheet'>
 	<link href='css/style-modal-qr.css' rel='stylesheet'>
 	<link href='css/style-footer.css' rel='stylesheet'>
-	<link href='css/style-btnTop.css' rel='stylesheet'>
 	<!-- Boxiocns CDN Link -->
 	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<!-- Script CDN Link -->
@@ -39,11 +38,7 @@
 
 				<div class="img-map">
 					<div class="images">
-						<img src="images/rancho.jpeg">
-					</div>
-
-					<div class="images">
-						<img src="images/rancho.jpeg">
+						<img src="images/rancho.jpeg" class="center">
 					</div>
 				</div>
 			</div>

@@ -69,8 +69,4 @@ $cabecerasCliente  = 'MIME-Version: 1.0' . "\r\n";
 $cabecerasCliente .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $cabecerasCliente .= 'From: La Paz B.C.S, Mexico<eco.trashservice@gmail.com>';
 $enviadoCliente   = mail($paraEcoTrash, $titulo, $mensaje, $cabecerasCliente);
-
-echo "<script>
-    window.location='https://www.youtube.com/';
-</script>";
 ?>

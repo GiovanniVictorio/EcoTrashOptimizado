@@ -27,8 +27,13 @@
   justify-content: space-between;
   align-items: center;
 }
-.content .img-map .map, .content .img-map .images { width: 50%; }
+.content .img-map .images { width: 100%; }
 .content .img-map .images img { width: 450px; }
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 @media (max-width: 800px) {
   .content .img-map {
@@ -40,7 +45,6 @@
   }
   .content .img-map .images { 
     margin-top: 10px; 
-    
     width: 100%;
   }
   .content {
