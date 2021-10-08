@@ -96,6 +96,9 @@
 
 		var logo = document.getElementById("logo");
 		logo.src = "../../images/Logo.png";
+
+		var form = document.getElementById("form");
+		form.action = "../enviar.php";
 	</script>
 </body>
 </html>
