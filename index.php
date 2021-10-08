@@ -75,6 +75,9 @@
 
 		var logo = document.getElementById("logo");
 		logo.src = "images/Logo.png";
+
+		var form = document.getElementById("form");
+		form.action = "html/enviar.php";
 	</script>
 </body>
 </html>
